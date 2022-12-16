@@ -35,11 +35,10 @@ int main()
 					}
 					else ++j;
 				}
-				for (int j = 0; j < i->second; j++)
+				for (; i->second!=0; --i->second)
 				{
 					res.push_back(i->first);
 				}
-				i->second = 0;
 			}
 
 			if (i->second == 0) m.erase(i++);
