@@ -40,9 +40,8 @@ int main()
 					res.push_back(i->first);
 				}
 			}
-
 			if (i->second == 0) m.erase(i++);
-			else { i++; }
+			else i++;
 		}
 	}
 	
